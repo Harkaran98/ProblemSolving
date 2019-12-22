@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class A {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+         Scanner sc=new Scanner(System.in);
+         String s=sc.next();
+         int j=Integer.parseInt(s.substring(0,2));
+         if(j==12)
+             j-=12;
+        String s1=String.valueOf(j);
+        
+         if(s.contains("A"))
+             { if(j<10)
+                 s1="0".concat(s1);
+                 System.out.println(s1+s.substring(2,8));
+             }
+         else
+              {
+              
+             String s2=String.valueOf(j+12);
+             System.out.println(s2+s.substring(2,8));
+             
+              }
+             
+             
+            sc.close();
+            
+
+}
+}
